@@ -1,7 +1,3 @@
-use std::env::set_current_dir;
-use std::fmt;
-use std::fmt::{Formatter, write};
-use std::thread::current;
 use rand::Rng;
 use std::io;
 
@@ -69,10 +65,6 @@ impl Hangman {
 
     pub fn print_mask(&self){
         println!("Mask: {}", self.mask);
-    }
-
-    fn has_won(self) -> bool {
-        self.secret.contains("_")
     }
 }
 
